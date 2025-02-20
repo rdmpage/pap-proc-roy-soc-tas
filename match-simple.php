@@ -157,7 +157,7 @@ foreach ($one as $year => $articles)
 				$result = compare_common_subsequence($text1, $text2);
 				
 				
-				if ($result->normalised[1] > 0.95)
+				if ($result->normalised[1] > 0.80)
 				{
 					// one string is almost an exact substring of the other
 					if ($result->normalised[0] > 0.90)
