@@ -26,6 +26,10 @@ $years = array(1884, 1885);
 
 $years = array(1864, 1865, 1866);
 
+$years = array(1850, 1851, 1852);
+
+$years = array(1859, 1860);
+
 $sql1 = 'SELECT * FROM publications WHERE cluster_guid IS NULL AND year IN (' . join(',', $years) . ') AND guid NOT LIKE "10%"';
 $sql2 = 'SELECT * FROM publications WHERE cluster_guid IS NULL AND year IN (' . join(',', $years) . ') AND guid LIKE "10%"';
 
